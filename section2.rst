@@ -131,13 +131,14 @@ First of all, Scala tells us ** is not a member, so it follows Ints
 have members. It also means that there *are* other members defined for
 Int. Now if I only could find out about those other 
 
-Methods on Int
+Members of Int
 ==============
 
 I am going to forget about the operators for now and focus on the
 *members* mentioned by the Scala REPL. How I do find about members
-defined on Int? If this were an IDE, I would type the number, then
-type a dot and hit CTRL-Space or TAB. 
+defined on Int? If this were an IDE, I would type the number (the
+thing for which I want to list its members), then type a dot and hit
+CTRL-Space or TAB.
 
 ::
 
@@ -204,6 +205,8 @@ And it does. In fact, trying this gives Doubles as well.
   res34: Double = 0.234
 
 But this doesn't:
+
+::
 
   scala> .23
   <console>:1: error: ';' expected but double literal found.
